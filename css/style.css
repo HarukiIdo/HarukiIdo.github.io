@@ -1,0 +1,123 @@
+/*共通*/
+body{
+  font-family: 'Lato', sans-serif;
+  padding-top: 40px;
+}
+
+.title{
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+
+/*header*/
+header  a{
+  margin-left: 16px;
+  text-align: center;
+}
+.layer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.img_header{
+  background: url(../img/header.jpg);
+  background-size: cover;
+  max-width: 100%;
+  height: 550px;
+}
+.img_header h1{
+  margin: auto 0;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+/*main*/
+/*about*/
+#about{
+  background: rgb(219, 215, 215);
+}
+.about_area{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about_area-img{
+  width: 50%;
+}
+.about_area-img > img{
+  max-width: 100%;
+  border-radius: 50%;
+  padding-bottom: 20px;
+}
+.about_area-description{
+  width: 50%;
+  padding: 16px;
+}
+
+@media screen and (max-width: 768px) {
+
+  ul{
+    width: 100%;
+  }
+  
+  .about_area-img{
+    width: 100%;
+  }
+  
+  .about_area-description{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*skills*/
+#skills h2{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.skill-icon{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 40px;
+  color: #535252;
+}
+
+/*works*/
+#works h2{
+  text-align: center;
+  padding: 20px 0;
+}
+
+.work-area{
+  border: solid 1px black;
+}
+
+.img_work{
+  text-align: center;
+}
+
+.img_work img{
+  width: 50%;
+  padding-bottom: 40px;
+}
+
+/*contact*/
+#contact{
+  background: #d6d3d3;
+  margin-top: 40px;
+}
+.contact-icon{
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+/*footer*/
+footer{
+  text-align: center;
+  background: #d6d3d3;
+}

@@ -1,0 +1,88 @@
+/*共通*/
+body{
+  font-family: 'Lato', sans-serif;
+  padding-top: 40px;
+}
+
+/*header*/
+header a{
+  margin-left: 16px;
+  text-align: center;
+}
+
+/*main*/
+/*work1*/
+.work1{
+  background-color: #EEEEEE;
+  text-align: center;
+}
+.work1 h1{
+  padding: 40px 0;
+}
+.image-area{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.work1-img{
+  width: 35%;
+  margin: 0 auto;
+}
+.work1-img img{
+  max-width: 100%;
+}
+.grid-image ul{
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.grid-image ul li{
+  display: inline-block;
+  width: 100px;
+  height: 140px;
+  border: solid 1px black;
+}
+
+.grid-image input{
+  display: none;
+}
+.im1{
+  background-image: url(../img/englishapp/toppage.png);
+  background-size: cover;
+}
+.im2{
+  background-image: url(../img/englishapp/translate.png);
+  background-size: cover;
+}
+.im3{
+  background-image: url(../img/englishapp/addview.png);
+  background-size: cover;
+}
+.work1-summary1{
+  padding-bottom: 40px;
+}
+.summary-title{
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+.summary-title:before{
+  margin-right: 1rem;
+}
+.summary-title:after{
+  margin-left: 1rem;
+}
+.summary-title:before, .summary-title:after{
+  border-top: 1px solid;
+  content: "";
+  flex-grow: 1;
+}
+.work1-summary2{
+  padding-bottom: 20px;
+}
+.work1-demo{
+  padding-bottom: 40px;
+}

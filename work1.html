@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+   <!-- DEVICON -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+
+   <!-- CSS -->
+  <link rel="stylesheet" href="css/style1.css">
+  <title>自作英単語アプリ</title>
+</head>
+
+<body>
+  <!-- menu -->
+  <header>
+    <div class="header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a href="index.html#" class="navbar-brand">Haruki Ido</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-bs-target="#menu">
+            <span class="navbar-toggler-icon" ></span>
+          </button>
+          <div id="menu" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav ms-auto">
+              <li><a href="https://github.com/haruriku" target="_blank" class="nav-link"><i class="fab fa-github"></i></a></li>
+              <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="index.html#skills" class="nav-link">Skills</a></li>
+              <li class="nav-item"><a href="index.html#works" class="nav-link">Works</a></li>
+              <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 作品紹介 -->
+  <main>
+    <section>
+      <div class="work1">
+        <div class="work1-text">
+          <h1 class="title">自作英単語アプリ</h1>
+        </div>
+        <div class="container">
+          <div class="image-area">
+            <div class="work1-img">
+              <img src="img/englishapp/toppage.png" alt="" id="main-image">
+            </div>
+            <div class="grid-image">
+              <ul>
+                <li onclick="click_im1" id="im1" class="im1"><input type="checkbox"/></li>
+                <li onclick="click_im2" id="im2" class="im2"><input type="checkbox"/></li>
+                <li onclick="click_im3" id="im3" class="im3"><input type="checkbox"/></li>
+  
+              </ul>
+            </div>
+          </div>
+            <script type="text/javascript">
+              var id_im1 = document.getElementById("im1");
+              var id_im2 = document.getElementById("im2");
+              var id_im3 = document.getElementById("im3");
+              
+              id_im1.onclick = function id1Click() {
+                ChangeImage("main-image","img/englishapp/toppage.png");
+              }
+              id_im2.onclick = function () {
+                ChangeImage("main-image","img/englishapp/translate.png");
+              }
+              id_im3.onclick = function () {
+                ChangeImage("main-image","img/englishapp/addview.png");
+              }
+              function ChangeImage (imgid, newimg) {
+                document.getElementById(imgid).src = newimg;
+              }
+          </script>
+          <div class="work1-summary1">
+            <div class="summary-title">自作英単語アプリ</div>
+            <p>自分が覚えたい単語と対応する和訳を入力するだけで簡単にリスト形式で登録できるアプリ。<br>
+              TOEICを勉強していた時になかなか覚えられない単語を紙に書いていたのですが、<br>
+              アプリで代用できればいいなと思ったのでつくりました。<br>
+              こだわったポイントとしては、リスト表示の際に日本語が見えず、わからなかった単語だけタップすることで確認できるようにしたところです。</p>
+          </div>
+          <div class="work1-summary2">
+            <div class="summary-title">使用技術/ツール</div>
+            <p>swift(swiftUI),xcode,GitHub</p>
+          </div>
+          <div class="work-icon">
+              <button type="button" onclick="location.href='https://www.youtube.com/watch?v=nSZ36z3_10g&list=RDYTQV48V44Sw&index=7'" class="btn btn-dark">Demo</button>
+              <a href="https://github.com/HarukiIdo/EnglishWordsApp" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
