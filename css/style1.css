@@ -91,7 +91,17 @@ header a{
   padding-bottom: 40px
 }
 .work-icon a{
-  margin: 0 16px;
-  font-size: 36px;
+  margin: auto 16px;
+  text-decoration: none;
+}
+.demo-button{
+  color: white;
+  background-color: black;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.github-button{
   color: black;
+  font-size: 36px;
 }
