@@ -50,15 +50,11 @@ header a{
   display: none;
 }
 .im1{
-  background-image: url(../img/englishapp/toppage.png);
+  background-image: url(../img/webapp/home.png);
   background-size: cover;
 }
 .im2{
-  background-image: url(../img/englishapp/translate.png);
-  background-size: cover;
-}
-.im3{
-  background-image: url(../img/englishapp/addview.png);
+  background-image: url(../img/webapp/amazon.png);
   background-size: cover;
 }
 .work1-summary1{
@@ -83,6 +79,25 @@ header a{
 .work1-summary2{
   padding-bottom: 20px;
 }
-.work1-demo{
-  padding-bottom: 40px;
+.work-icon{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 40px
+}
+.work-icon a{
+  margin: auto 16px;
+  text-decoration: none;
+}
+.demo-button{
+  color: white;
+  background-color: black;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.github-button{
+  color: black;
+  font-size: 36px;
 }

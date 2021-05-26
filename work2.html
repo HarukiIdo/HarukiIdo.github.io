@@ -14,8 +14,8 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
 
    <!-- CSS -->
-  <link rel="stylesheet" href="css/style1.css">
-  <title>アプリ2</title>
+  <link rel="stylesheet" href="css/style2.css">
+  <title>アプリ紹介</title>
 </head>
 
 <body>
@@ -47,54 +47,48 @@
     <section>
       <div class="work1">
         <div class="work1-text">
-          <h1 class="title">自作英単語アプリ</h1>
+          <h1 class="title">お気に入りwebサイトアプリ</h1>
         </div>
         <div class="container">
           <div class="image-area">
             <div class="work1-img">
-              <img src="img/englishapp/toppage.png" alt="" id="main-image">
+              <img src="img/webapp/home.png" alt="" id="main-image">
             </div>
             <div class="grid-image">
               <ul>
                 <li onclick="click_im1" id="im1" class="im1"><input type="checkbox"/></li>
                 <li onclick="click_im2" id="im2" class="im2"><input type="checkbox"/></li>
-                <li onclick="click_im3" id="im3" class="im3"><input type="checkbox"/></li>
-  
               </ul>
             </div>
           </div>
             <script type="text/javascript">
               var id_im1 = document.getElementById("im1");
               var id_im2 = document.getElementById("im2");
-              var id_im3 = document.getElementById("im3");
               
               id_im1.onclick = function id1Click() {
-                ChangeImage("main-image","img/englishapp/toppage.png");
+                ChangeImage("main-image","img/webapp/home.png");
               }
               id_im2.onclick = function () {
-                ChangeImage("main-image","img/englishapp/translate.png");
-              }
-              id_im3.onclick = function () {
-                ChangeImage("main-image","img/englishapp/addview.png");
+                ChangeImage("main-image","img/webapp/amazon.png");
               }
               function ChangeImage (imgid, newimg) {
                 document.getElementById(imgid).src = newimg;
               }
           </script>
           <div class="work1-summary1">
-            <div class="summary-title">自作英単語アプリ</div>
-            <p>自分が覚えたい単語と対応する和訳を入力するだけで簡単にリスト形式で登録できるアプリ。<br>
-              TOEICを勉強していた時になかなか覚えられない単語を紙に書いていたのですが、<br>
-              アプリで代用できればいいなと思ったのでつくりました。<br>
-              こだわったポイントとしては、リスト表示の際に日本語が見えず、わからなかった単語だけタップすることで確認できるようにしたところです。</p>
+            <div class="summary-title">お気に入りwebサイトアプリ</div>
+            <p>お気に入りのwebサイトに即座にアクセスすることができるアプリ<br>
+              初めて自分で作ったアプリです<br>
+              </p>
           </div>
           <div class="work1-summary2">
             <div class="summary-title">使用技術/ツール</div>
-            <p>swift(swiftUI),xcode,GitHub</p>
+            <p>swift(UIKit),xcode,GitHub</p>
           </div>
-          <div class="work1-demo">
-            <button type="button" class="btn btn-dark">Demo</button>
-          </div>
+          <div class="work-icon">
+            <a href="https://youtu.be/rs1hN8hd3aM" target="_blank" rel="noopener noreferrer" class="demo-button">demo</a>
+            <a href="https://github.com/HarukiIdo/WKWebView" target="_blank" rel="noopener noreferrer" class="github-button"><i class="fab fa-github"></i></a>
+        </div>
         </div>
       </div>
     </section>
