@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <!-- Bootstrap CSS -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-   <!-- Font Awesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
 
-   <!-- DEVICON -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+  <!-- DEVICON -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
 
-   <!-- CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style2.css">
   <title>アプリ紹介</title>
 </head>
@@ -25,12 +29,14 @@
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
           <a href="index.html#" class="navbar-brand">Haruki Ido</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-bs-target="#menu">
-            <span class="navbar-toggler-icon" ></span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div id="menu" class="collapse navbar-collapse">
             <ul class="nav navbar-nav ms-auto">
-              <li><a href="https://github.com/haruriku" target="_blank" class="nav-link"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://github.com/haruriku" target="_blank" class="nav-link"><i
+                    class="fab fa-github"></i></a></li>
               <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
               <li class="nav-item"><a href="index.html#skills" class="nav-link">Skills</a></li>
               <li class="nav-item"><a href="index.html#works" class="nav-link">Works</a></li>
@@ -47,54 +53,60 @@
     <section>
       <div class="work1">
         <div class="work1-text">
-          <h1 class="title">お気に入りwebサイトアプリ</h1>
+          <h1 class="title">借金管理アプリ</h1>
         </div>
         <div class="container">
           <div class="image-area">
             <div class="work1-img">
-              <img src="img/webapp/home.png" alt="" id="main-image">
+              <img src="img/repayer/figma.png" alt="" id="main-image">
             </div>
-            <div class="grid-image">
+            <!-- <div class="grid-image">
               <ul>
-                <li onclick="click_im1" id="im1" class="im1"><input type="checkbox"/></li>
-                <li onclick="click_im2" id="im2" class="im2"><input type="checkbox"/></li>
+                <li onclick="click_im1" id="im1" class="im1"><input type="checkbox" /></li>
+                <li onclick="click_im2" id="im2" class="im2"><input type="checkbox" /></li>
               </ul>
-            </div>
+            </div> -->
           </div>
-            <script type="text/javascript">
-              var id_im1 = document.getElementById("im1");
-              var id_im2 = document.getElementById("im2");
-              
-              id_im1.onclick = function id1Click() {
-                ChangeImage("main-image","img/webapp/home.png");
-              }
-              id_im2.onclick = function () {
-                ChangeImage("main-image","img/webapp/amazon.png");
-              }
-              function ChangeImage (imgid, newimg) {
-                document.getElementById(imgid).src = newimg;
-              }
+          <script type="text/javascript">
+            var id_im1 = document.getElementById("im1");
+            var id_im2 = document.getElementById("im2");
+
+            id_im1.onclick = function id1Click() {
+              ChangeImage("main-image", "img/repayer/figma.png");
+            }
+            id_im2.onclick = function () {
+              ChangeImage("main-image", "img/webapp/amazon.png");
+            }
+            function ChangeImage(imgid, newimg) {
+              document.getElementById(imgid).src = newimg;
+            }
           </script>
           <div class="work1-summary1">
-            <div class="summary-title">お気に入りwebサイトアプリ</div>
-            <p>お気に入りのwebサイトに即座にアクセスすることができるアプリ<br>
-              初めて自分で作ったアプリです<br>
-              </p>
+            <div class="summary-title">repayer ~貸した人に安心を、借りた人に信用を~</div>
+            <p>身近な人と貸したり借りたお金を管理し、貸し借りによるストレスを解消するためのアプリです。<br>
+              まだ未完成ですが、夏までにApp Storeリリースを目標に現在も研究の合間を縫って開発中です。
+              <br>
+            </p>
           </div>
           <div class="work1-summary2">
             <div class="summary-title">使用技術/ツール</div>
-            <p>swift(UIKit),xcode,GitHub</p>
+            <p>Flutter, Firebase, Figma, GitHub</p>
           </div>
           <div class="work-icon">
-            <a href="https://youtu.be/rs1hN8hd3aM" target="_blank" rel="noopener noreferrer" class="demo-button">demo</a>
-            <a href="https://github.com/HarukiIdo/WKWebView" target="_blank" rel="noopener noreferrer" class="github-button"><i class="fab fa-github"></i></a>
-        </div>
+            <!-- <a href="https://youtu.be/rs1hN8hd3aM" target="_blank" rel="noopener noreferrer"
+              class="demo-button">demo</a> -->
+            <a href="https://github.com/HarukiIdo/repayer" target="_blank" rel="noopener noreferrer"
+              class="github-button"><em class="fab fa-github"></em></a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-   <!-- Option 1: Bootstrap Bundle with Popper -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
